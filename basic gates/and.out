@@ -1,0 +1,54 @@
+#! c:/iverilog/bin/vvp
+:ivl_version "0.10.0 (devel)" "(s20130827)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_01153638 .scope module, "AND" "AND" 2 9;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "c"
+    .port_info 1 /INPUT 1 "a"
+    .port_info 2 /INPUT 1 "b"
+o00F91874 .functor BUFZ 1, C4<z>; HiZ drive
+o00F9188C .functor BUFZ 1, C4<z>; HiZ drive
+L_01159708 .functor AND 1, o00F91874, o00F9188C, C4<1>, C4<1>;
+v01154560_0 .net "a", 0 0, o00F91874;  0 drivers
+v011545B8_0 .net "b", 0 0, o00F9188C;  0 drivers
+v01154610_0 .net "c", 0 0, L_01159708;  1 drivers
+S_01153708 .scope module, "AND_DFM1" "AND_DFM1" 2 14;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a"
+    .port_info 1 /INPUT 1 "b"
+    .port_info 2 /OUTPUT 1 "c"
+o00F91904 .functor BUFZ 1, C4<z>; HiZ drive
+o00F9191C .functor BUFZ 1, C4<z>; HiZ drive
+L_01159750 .functor AND 1, o00F91904, o00F9191C, C4<1>, C4<1>;
+v01154668_0 .net "a", 0 0, o00F91904;  0 drivers
+v011546C0_0 .net "b", 0 0, o00F9191C;  0 drivers
+v01153E40_0 .net "c", 0 0, L_01159750;  1 drivers
+S_01154DE8 .scope module, "AND_DFM2" "AND_DFM2" 2 20;
+ .timescale 0 0;
+o00F91994 .functor BUFZ 1, C4<z>; HiZ drive
+o00F919AC .functor BUFZ 1, C4<z>; HiZ drive
+L_01159798 .functor AND 1, o00F91994, o00F919AC, C4<1>, C4<1>;
+v01153E98_0 .net "a", 0 0, o00F91994;  0 drivers
+v01153EF0_0 .net "b", 0 0, o00F919AC;  0 drivers
+v01153F48_0 .net "c", 0 0, L_01159798;  1 drivers
+S_01154EB8 .scope module, "AND_GLM" "AND_GLM" 2 3;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a"
+    .port_info 1 /INPUT 1 "b"
+    .port_info 2 /OUTPUT 1 "c"
+o00F919DC .functor BUFZ 1, C4<z>; HiZ drive
+o00F919F4 .functor BUFZ 1, C4<z>; HiZ drive
+L_011597E0 .functor AND 1, o00F919DC, o00F919F4, C4<1>, C4<1>;
+v01153FA0_0 .net "a", 0 0, o00F919DC;  0 drivers
+v011596B0_0 .net "b", 0 0, o00F919F4;  0 drivers
+v0115E250_0 .net "c", 0 0, L_011597E0;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "and.v";

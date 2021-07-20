@@ -1,0 +1,48 @@
+#! c:/iverilog/bin/vvp
+:ivl_version "0.10.0 (devel)" "(s20130827)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_009548D8 .scope module, "NOT" "NOT" 2 10;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "c"
+    .port_info 1 /INPUT 1 "a"
+    .port_info 2 /INPUT 1 "b"
+o009C188C .functor BUFZ 1, C4<z>; HiZ drive
+L_00954430 .functor NOT 1, o009C188C, C4<0>, C4<0>, C4<0>;
+L_0095E918 .functor NOT 1, o009C188C, C4<0>, C4<0>, C4<0>;
+v00958498_0 .net "a", 0 0, L_0095E918;  1 drivers
+v00953D78_0 .net "b", 0 0, o009C188C;  0 drivers
+v00953DD0_0 .net "c", 0 0, L_00954430;  1 drivers
+S_009549A8 .scope module, "NOT_DFM1" "NOT_DFM1" 2 15;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a"
+    .port_info 1 /OUTPUT 1 "b"
+o009C1904 .functor BUFZ 1, C4<z>; HiZ drive
+L_0095ED68 .functor NOT 1, o009C1904, C4<0>, C4<0>, C4<0>;
+v00953E28_0 .net "a", 0 0, o009C1904;  0 drivers
+v00953E80_0 .net "b", 0 0, L_0095ED68;  1 drivers
+S_00953638 .scope module, "NOT_GLM" "NOT_GLM" 2 3;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a"
+    .port_info 1 /OUTPUT 1 "b"
+o009C1994 .functor BUFZ 1, C4<z>; HiZ drive
+L_0095EDB0 .functor NOT 1, o009C1994, C4<0>, C4<0>, C4<0>;
+o009C1964 .functor BUFZ 1, C4<z>; HiZ drive
+v00953ED8_0 .net "a", 0 0, o009C1964;  0 drivers
+v009542D0_0 .net "b", 0 0, L_0095EDB0;  1 drivers
+v00954328_0 .net "c", 0 0, o009C1994;  0 drivers
+S_00953708 .scope module, "OR_DFM2" "OR_DFM2" 2 21;
+ .timescale 0 0;
+o009C19DC .functor BUFZ 1, C4<z>; HiZ drive
+L_0095EDF8 .functor NOT 1, o009C19DC, C4<0>, C4<0>, C4<0>;
+v00954380_0 .net "a", 0 0, o009C19DC;  0 drivers
+v009543D8_0 .net "b", 0 0, L_0095EDF8;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "not.v";
